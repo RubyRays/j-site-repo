@@ -60,6 +60,8 @@ app.post('/create', async(req,res)=>{
 })
 
 
-app.listen(3001, function(){
+const port= process.env.PORT || 3001
+
+app.listen(port, function(){
     console.log("Server is running on port 3001");
 })
