@@ -6,7 +6,7 @@ const cors = require('cors');
 
 const app = express();
 
-var options = {
+var initialOptions = {
     dotfiles: 'ignore',
     etag: false,
     extensions: ['htm', 'html', 'css', 'js', 'ico', 'jpg', 'jpeg', 'png', 'svg'],
@@ -16,7 +16,7 @@ var options = {
 }
 
 
-app.use(express.static('build', options))
+app.use(express.static('build', initialOptions))
 
 app.use(cors());
 app.use(express.json());
