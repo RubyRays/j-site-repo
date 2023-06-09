@@ -29,7 +29,7 @@ app.post('/create', async(req,res)=>{
     const company = req.body.contactInfo.company;
     const message = req.body.contactInfo.message;
     
-    console.log(name +" has email: "+ email);
+    
 
         var data = {
         members: [
