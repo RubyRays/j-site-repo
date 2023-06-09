@@ -7,7 +7,7 @@ function Contact(props){
 
     const displayInfo2= (contactInfo)=>{
     //   console.log(contactInfo);
-      Axios.post('${process.env.CREATE_PATH}', {contactInfo})
+      Axios.post(`${process.env.REACT_APP_CREATE_PATH}`, {contactInfo})
       .then(response => console.log(response))
       .catch(err => console.log(err))
     }
