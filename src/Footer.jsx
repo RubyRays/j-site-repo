@@ -8,7 +8,7 @@ function Footer(){
             <div className="rows ">
             <div className=" footer-left">
             <div>
-                <img src='images/footer/icons.svg' alt="home background"></img>
+                <img src='images/footer/Icons.svg' alt="home background"></img>
             
             <p>
                 Home
